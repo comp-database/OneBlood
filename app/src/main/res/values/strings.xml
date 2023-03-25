@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">One Blood</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="selected_item">Selected item:</string>
+
+    <string-array name="Blood_Group">
+        <item>  Blood Group  </item>
+        <item>  A+  </item>
+        <item>  AB-  </item>
+        <item>  AB+  </item>
+        <item>  B+  </item>
+        <item>  B-  </item>
+        <item>  A-  </item>
+        <item>  O+  </item>
+        <item>  O-  </item>
+    </string-array>
+
+    <string-array name="Location">
+        <item>  Choose Location  </item>
+        <item>  Hospital  </item>
+        <item>  Blood Bank  </item>
+    </string-array>
+
+</resources>

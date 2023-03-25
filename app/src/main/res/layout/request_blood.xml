@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.request_blood.RequestBlood"
+    android:background="@color/bg"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/bg">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:text="(Kindly fill the details to help you better)"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile_blood"
+                />
+
+        <EditText
+            android:id="@+id/PATIENT_FIRST_NAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Patient First Name"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:hint="Patient First Name"
+            android:imeOptions="actionNext"
+            android:background="@drawable/round_edges"
+            />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile_blood"
+            />
+        <EditText
+            android:id="@+id/PATIENT_LAST_1NAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Patient Last Name"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:hint="Patient Last Name"
+            android:padding="10dp"
+            android:imeOptions="actionNext"
+            android:background="@drawable/round_edges"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/contact_blood"
+            />
+        <EditText
+            android:id="@+id/PATIENT_NUMBER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Patient Last Name"
+            android:inputType="phone"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:hint="Phone Number"
+            android:padding="10dp"
+            android:imeOptions="actionNext"
+            android:background="@drawable/round_edges"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile_blood"
+            />
+        <EditText
+            android:id="@+id/PATIENT_DOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Patient Last Name"
+            android:inputType="date"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:hint="Patient Age (DOB)"
+            android:background="@drawable/round_edges"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/calender_blood"
+            />
+        <EditText
+            android:id="@+id/PATIENT_REQUIRED_BLOOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Patient Last Name"
+            android:inputType="date"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:hint="Required Date"
+            android:background="@drawable/round_edges"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile_blood"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_edges"
+            android:padding="8dp">
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile_blood"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_edges"
+            android:padding="8dp">
+            <Spinner
+                android:id="@+id/spinner_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
